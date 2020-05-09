@@ -13,7 +13,7 @@ def configure_request(app):
 
 def get_sources(category):
     
-    get_news_source_url = base_url.format(category, api_key)
+    get_news_source_url = base_url.format(api_key)
     print(get_news_source_url)
     with urllib.request.urlopen(get_news_source_url) as url:
 
